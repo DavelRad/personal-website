@@ -1,0 +1,96 @@
+
+.flex-container {
+    display: flex;
+}
+
+.davel {
+    flex: 1;
+}
+.description {
+    font-family: Roboto;
+    flex: 1;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 10%;
+    right: 3%;
+}
+
+.description h1 {
+    color: black;
+}
+
+.description p {
+    color: gray;
+}
+
+.davel {
+    width: 45%;
+}
+
+.col img {
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+}
+.links-bar {
+    border-style: outset;
+    display: flex;          
+    justify-content: center;  
+    align-items: center;     
+    height: 100px;           
+    margin-top: 5%;
+}
+
+.links {
+    list-style-type: none;  
+    padding: 0;              
+    margin: 0;               
+    display: flex;          
+    justify-content: space-around; 
+    width: 100%;
+
+}
+
+.links li {
+    border-style: solid;
+    border-color: beige;
+    border-radius: 20%;
+    padding: 7px;
+    background-color: beige;
+    margin: 0 200px;          
+    
+}
+
+.links a {
+    text-decoration: none;   
+    color: inherit;          
+    font-size: 30px;
+    display: flex; 
+    align-items: center; 
+}
+
+.project-section{
+    margin-top: 50px;
+    background-color: aqua;
+    border-radius: 10%;
+    padding-bottom: 50px;
+}
+
+.project-section h1, ul{
+    display: flex;
+    justify-content: center;
+} 
+
+.project-section h1 {
+    margin-bottom: 50px;
+}
+
+.project-section li {
+    list-style-type: none;
+    border-style: solid;
+    border-color: beige;
+    border-radius: 20%;
+    padding: 7px;
+    background-color: beige;
+    margin: 0 auto;          
+}
