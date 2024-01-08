@@ -1,96 +1,75 @@
-
-.flex-container {
-    display: flex;
-}
-
-.davel {
-    flex: 1;
-}
-.description {
-    font-family: Roboto;
-    flex: 1;
-    position: relative;
-    margin-top: 15%;
-    margin-left: 10%;
-    right: 3%;
-}
-
-.description h1 {
-    color: black;
-}
-
-.description p {
-    color: gray;
-}
-
-.davel {
-    width: 45%;
-}
-
-.col img {
-    height: 600px;
-    width: 600px;
+.davel-image img {
     border-radius: 50%;
-}
-.links-bar {
-    border-style: outset;
-    display: flex;          
-    justify-content: center;  
-    align-items: center;     
-    height: 100px;           
-    margin-top: 5%;
+    width: 80%;
+    height: auto;
+    margin-top: 10%;
 }
 
-.links {
-    list-style-type: none;  
-    padding: 0;              
-    margin: 0;               
-    display: flex;          
-    justify-content: space-around; 
-    width: 100%;
-
+.introduction {
+    margin-top: 15%;
+    font-size: 1.5vw;
+    text-align: left;
 }
 
-.links li {
-    border-style: solid;
-    border-color: beige;
+.project-section {
+    margin-top: 10%;
+}
+.project-section img {
     border-radius: 20%;
-    padding: 7px;
-    background-color: beige;
-    margin: 0 200px;          
-    
 }
 
-.links a {
-    text-decoration: none;   
-    color: inherit;          
-    font-size: 30px;
-    display: flex; 
-    align-items: center; 
+.overlay {
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1; /* Ensure the link is above the image */
 }
 
-.project-section{
-    margin-top: 50px;
-    background-color: aqua;
-    border-radius: 10%;
-    padding-bottom: 50px;
+.project-headline {
+    font-size: 24px;
+    color: #333333; /* Color of the text */
+    text-align: center; /* Aligning text to the center */
+    margin-top: 20px; /* Top margin */
+    margin-bottom: 20px; /* Bottom margin */
+    font-weight: bold; /* Making the font bold */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 2px; /* Spacing between letters */
+    line-height: 1.4; /* Line height for better readability */
 }
 
-.project-section h1, ul{
-    display: flex;
-    justify-content: center;
-} 
-
-.project-section h1 {
-    margin-bottom: 50px;
+footer {
+    background-color: #f8f8f8; /* Light grey background */
+    color: #333; /* Dark grey text */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern, sans-serif font */
+    padding: 20px; /* Padding for spacing */
+    font-size: 16px; /* Legible font size */
+    border-top: 1px solid #eaeaea; /* Slight border on top for definition */
+    margin-top: 100px;
 }
 
-.project-section li {
-    list-style-type: none;
-    border-style: solid;
-    border-color: beige;
-    border-radius: 20%;
-    padding: 7px;
-    background-color: beige;
-    margin: 0 auto;          
+.footer-content {
+    text-align: center; /* Center align footer content */
+    max-width: 1160px; /* Max width similar to the screenshot's content area */
+    margin: 0 auto; /* Center the footer content */
+}
+
+.social-media-icons a {
+    color: #333; /* Dark grey links */
+    margin: 0 10px; /* Space out the social media links */
+    text-decoration: none; /* No underline */
+    font-size: 14px; /* Slightly smaller font size for the links */
+}
+
+.social-media-icons a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 20px 10px; /* Smaller padding on smaller screens */
+    }
+    .social-media-icons a {
+        display: block; /* Stack the links vertically on small screens */
+        margin-bottom: 5px; /* Add bottom margin for vertical stack */
+    }
 }
