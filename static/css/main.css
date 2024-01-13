@@ -73,3 +73,39 @@ footer {
         margin-bottom: 5px; /* Add bottom margin for vertical stack */
     }
 }
+
+.gallery {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.gallery a {
+    text-decoration: none;
+}
+
+.gallery-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 20%;
+}
+
+.gallery-info {
+    flex: 1;
+}
+
+.gallery-info h3 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.gallery-info p {
+    color: #666;
+}

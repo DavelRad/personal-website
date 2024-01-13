@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Davel's Portofolio</title>
+{% endblock %}
+
+{% block body %}
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="/projects">Projects</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Links</a>
+    </li>
+</ul>
+
+<h1 class="text-center" style="margin-top: 5%;">My Projects</h1>
+
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="https://media.wnyc.org/i/320/320/l/80/1/blackbox.jpeg" alt="Project Image">
+        <div class="gallery-info">
+            <a href="/projects/scam-detect">
+                <h3>Scam Call Detection</h3>
+                <p>A first-place Hackathon project, this full-stack web application leverages Python and 
+                    a Panel frontend to transcribe and evaluate 
+                    call audios for scam likelihood using ChatGPT-trained data</p>
+            </a>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://media.wnyc.org/i/320/320/l/80/1/blackbox.jpeg" alt="Project Image">
+        <div class="gallery-info">
+            <a href="/projects/expense-tracker">
+                <h3>Expense Tracker</h3>
+                <p>A user-friendly responsive web application that tracks finances, featuring a dashboard with visual summaries, 
+                    and engineered with a Node.js and MongoDB backend to ensure efficient data transactions</p>
+            </a>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://media.wnyc.org/i/320/320/l/80/1/blackbox.jpeg" alt="Project Image">
+        <div class="gallery-info">
+            <a href="/projects/media-player">
+                <h3>JavaFX Media player</h3>
+                <p>A cross-platform, JavaFX-powered media player that balances simplicity and advanced features, offering intuitive controls, subtitle synchronization, and customizable playback</p>
+            </a>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://media.wnyc.org/i/320/320/l/80/1/blackbox.jpeg" alt="Project Image">
+        <div class="gallery-info">
+            <a href="/projects/course-planner">
+                <h3>Course Planner</h3>
+                <p>An AWS-hosted web application built with Python, Flask, and MySQL that organizes college courses and visualizes 
+                    course plans based on prerequisites, integrating web development expertise with data structure algorithms for reliable planning</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
